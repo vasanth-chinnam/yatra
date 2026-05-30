@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Yatra — India's Travel Guide</title>
+  <meta name="description" content="About Yatra — a free India travel guide covering 720+ destinations across all 36 states and union territories.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yatra.in/about.html">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+    body { background: #0A0E1A; color: #F9FAFB; }
+    .ab-nav { position: fixed; top: 0; left: 0; right: 0; height: 72px; z-index: 500; display: flex; align-items: center; padding: 0 32px; background: rgba(10,14,26,0.95); border-bottom: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(20px); }
+    .ab-nav-inner { display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: 1280px; margin: 0 auto; }
+    .logo { display: flex; align-items: center; gap: 8px; font-family: 'Outfit',sans-serif; font-size: 1.5rem; font-weight: 800; text-decoration: none; }
+    .logo-text { background: linear-gradient(135deg,#FF6B35,#F7C948); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .nl a { color: #9CA3AF; font-size: 14px; font-weight: 500; text-decoration: none; margin-left: 24px; }
+    .nl a:hover { color: #FF6B35; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    .container-sm { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+    .badge { display: inline-block; background: rgba(255,107,53,0.12); color: #FF6B35; border: 1px solid rgba(255,107,53,0.3); border-radius: 999px; font-size: 12px; font-weight: 600; padding: 4px 12px; margin-bottom: 16px; }
+    .hero { min-height: 460px; background: linear-gradient(135deg,#0A0E1A,#1A1F35,#0F172A); display: flex; align-items: center; padding-top: 72px; }
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); gap: 20px; }
+    .stat-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.09); border-radius: 16px; padding: 28px 20px; text-align: center; }
+    .stat-num { font-family: 'Outfit',sans-serif; font-size: 2.6rem; font-weight: 800; background: linear-gradient(135deg,#FF6B35,#F7C948); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1; margin-bottom: 6px; }
+    .stat-lbl { color: #9CA3AF; font-size: 13px; font-weight: 500; }
+    .feat-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap: 20px; }
+    .feat-card { background: rgba(17,24,39,0.8); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 28px; transition: border-color 0.3s, transform 0.3s; }
+    .feat-card:hover { border-color: rgba(255,107,53,0.3); transform: translateY(-3px); }
+    .feat-icon { width: 48px; height: 48px; border-radius: 13px; background: rgba(255,107,53,0.1); border: 1px solid rgba(255,107,53,0.2); display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 16px; }
+    .feat-card h3 { font-family: 'Outfit',sans-serif; font-size: 1rem; font-weight: 700; color: #F9FAFB; margin-bottom: 8px; }
+    .feat-card p { font-size: 13px; color: #9CA3AF; line-height: 1.7; }
+    .contact-box { background: rgba(17,24,39,0.6); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 48px 40px; }
+    .contact-row { display: flex; align-items: center; gap: 14px; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .contact-row:last-child { border-bottom: none; }
+    .c-icon { width: 38px; height: 38px; border-radius: 10px; background: rgba(255,107,53,0.1); border: 1px solid rgba(255,107,53,0.2); display: flex; align-items: center; justify-content: center; font-size: 17px; flex-shrink: 0; }
+    .c-lbl { font-size: 11px; color: #6B7280; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+    .c-val { font-size: 14px; color: #F9FAFB; margin-top: 2px; }
+    .c-val a { color: #FF6B35; text-decoration: none; }
+    footer { background: #0A0E1A; border-top: 1px solid rgba(255,255,255,0.07); padding: 36px 0; text-align: center; }
+    footer p { color: #4B5563; font-size: 13px; }
+    footer a { color: #FF6B35; text-decoration: none; }
+    hr.div { border: none; border-top: 1px solid rgba(255,255,255,0.07); margin: 72px 0; }
+  </style>
+</head>
+<body>
+
+<nav class="ab-nav">
+  <div class="ab-nav-inner">
+    <a href="index.html" class="logo"><span>🧭</span><span class="logo-text">Yatra</span></a>
+    <div class="nl">
+      <a href="index.html#/explore">Explore</a>
+      <a href="index.html#/route-planner">Route Planner</a>
+      <a href="privacy-policy.html">Privacy</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container" style="padding-top:60px; padding-bottom:60px;">
+    <span class="badge">About Yatra</span>
+    <h1 style="font-family:'Outfit',sans-serif; font-size:clamp(2rem,5vw,3.2rem); font-weight:800; line-height:1.1; margin-bottom:18px;">
+      Discover India,<br>
+      <span style="background:linear-gradient(135deg,#FF6B35,#F7C948); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">One State at a Time</span>
+    </h1>
+    <p style="color:#9CA3AF; font-size:1.05rem; line-height:1.75; max-width:540px; margin-bottom:28px;">Yatra is a free India travel guide for curious explorers. Whether planning your first Rajasthan trip or discovering Northeast gems, Yatra helps you find, plan, and dream.</p>
+    <div style="display:flex; gap:12px; flex-wrap:wrap;">
+      <a href="index.html#/explore" style="background:linear-gradient(135deg,#FF6B35,#F7C948); color:#0A0E1A; font-weight:700; font-size:14px; padding:12px 24px; border-radius:999px; text-decoration:none;">Start Exploring →</a>
+      <a href="#contact" style="border:1px solid rgba(255,255,255,0.15); color:#F9FAFB; font-weight:600; font-size:14px; padding:12px 24px; border-radius:999px; text-decoration:none;">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section style="padding:72px 0; background:#0A0E1A;">
+  <div class="container">
+    <div class="stat-grid">
+      <div class="stat-card"><div class="stat-num">720+</div><div class="stat-lbl">Destinations</div></div>
+      <div class="stat-card"><div class="stat-num">36</div><div class="stat-lbl">States & UTs</div></div>
+      <div class="stat-card"><div class="stat-num">12+</div><div class="stat-lbl">Categories</div></div>
+      <div class="stat-card"><div class="stat-num">100%</div><div class="stat-lbl">Free to Use</div></div>
+    </div>
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- Features -->
+<section style="padding: 0 0 72px;">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:48px;">
+      <h2 style="font-family:'Outfit',sans-serif; font-size:2rem; font-weight:800; color:#F9FAFB; margin-bottom:10px;">What Yatra Offers</h2>
+      <p style="color:#6B7280; font-size:14px;">Everything to explore India — in one place, free forever.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat-card"><div class="feat-icon">🗺️</div><h3>All 36 States & UTs</h3><p>Every Indian state and union territory with curated destinations and cultural highlights.</p></div>
+      <div class="feat-card"><div class="feat-icon">📍</div><h3>720+ Places</h3><p>Hand-curated database covering North, South, East, and West India — icons to hidden gems.</p></div>
+      <div class="feat-card"><div class="feat-icon">🛣️</div><h3>Route Planner</h3><p>Plan multi-stop road trips with distance calculations and travel mode options.</p></div>
+      <div class="feat-card"><div class="feat-icon">🗂️</div><h3>Travel Categories</h3><p>Filter by Heritage, Temples, Beaches, Hill Stations, Wildlife, Adventure, and more.</p></div>
+      <div class="feat-card"><div class="feat-icon">❤️</div><h3>Wishlist & Saves</h3><p>Save favourite places, states, and planned routes to revisit anytime.</p></div>
+      <div class="feat-card"><div class="feat-icon">🌐</div><h3>Interactive Maps</h3><p>Live Leaflet.js maps with precise location markers for every destination.</p></div>
+    </div>
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- Contact -->
+<section id="contact" style="padding: 0 0 100px;">
+  <div class="container-sm">
+    <div style="text-align:center; margin-bottom:44px;">
+      <h2 style="font-family:'Outfit',sans-serif; font-size:2rem; font-weight:800; color:#F9FAFB; margin-bottom:10px;">Get In Touch</h2>
+      <p style="color:#6B7280; font-size:14px;">Questions, suggestions, or want to collaborate? We'd love to hear from you.</p>
+    </div>
+    <div class="contact-box">
+      <div class="contact-row"><div class="c-icon">📧</div><div><div class="c-lbl">Email</div><div class="c-val"><a href="mailto:contact@yatra.in">contact@yatra.in</a></div></div></div>
+      <div class="contact-row"><div class="c-icon">🌐</div><div><div class="c-lbl">Website</div><div class="c-val"><a href="https://yatra.in">yatra.in</a></div></div></div>
+      <div class="contact-row"><div class="c-icon">📍</div><div><div class="c-lbl">Based in</div><div class="c-val" style="color:#9CA3AF;">India 🇮🇳</div></div></div>
+      <div class="contact-row"><div class="c-icon">📜</div><div><div class="c-lbl">Legal</div><div class="c-val"><a href="privacy-policy.html">Privacy Policy</a></div></div></div>
+    </div>
+    <div style="background:rgba(255,107,53,0.05); border:1px solid rgba(255,107,53,0.15); border-radius:14px; padding:22px; margin-top:24px; text-align:center;">
+      <p style="color:#9CA3AF; font-size:13px; line-height:1.7;">Yatra is a passion project built to make India's incredible destinations accessible to all. Information is for inspiration only — verify details with local authorities before visiting.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; <script>document.write(new Date().getFullYear())</script> Yatra — Discover India &nbsp;|&nbsp; <a href="privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="about.html" style="color:#9CA3AF;">About</a></p>
+</footer>
+
+</body>
+</html>

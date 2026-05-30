@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ✅ Debug overlay REMOVED for production -->
+
+  <title>Yatra — Discover India, One State at a Time | Travel & Route Planner</title>
+
+  <meta name="description" content="Explore India's 28 states and 8 union territories. Discover heritage sites, hill stations, beaches, temples, and hidden gems. Plan routes and build your perfect Indian adventure with Yatra.">
+  <meta name="keywords" content="India travel, Indian states, route planner, travel guide, heritage, temples, beaches, hill stations, Yatra">
+  <meta name="author" content="Yatra">
+  <meta name="theme-color" content="#0A0E1A">
+  <meta name="robots" content="index, follow">
+
+  <!-- ✅ Canonical link -->
+  <link rel="canonical" href="https://yatra.in/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yatra.in/">
+  <meta property="og:title" content="Yatra — Discover India, One State at a Time">
+  <meta property="og:description" content="Your ultimate travel companion for exploring India.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200&h=630&fit=crop">
+  <meta property="og:locale" content="en_IN">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Yatra — Discover India, One State at a Time">
+  <meta name="twitter:description" content="Your ultimate travel companion for exploring India.">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+
+  <link rel="stylesheet" href="css/index.css">
+
+  <style>
+    /* ✅ Fix missing gap-1 utility */
+    .gap-1 { gap: 8px; }
+
+    /* ✅ AdSense ad slot styles */
+    .ad-slot {
+      width: 100%;
+      text-align: center;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px dashed rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 12px 0;
+      backdrop-filter: blur(10px);
+      margin: var(--space-xl) auto;
+      max-width: 1200px;
+    }
+    
+    .ad-slot-label {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 8px;
+    }
+  </style>
+
+  <!-- ✅ GOOGLE ADSENSE
+    Step 1: Get approved at https://www.google.com/adsense
+    Step 2: Replace ca-pub-XXXXXXXXXXXXXXXX with your Publisher ID
+    Step 3: Uncomment the line below
+  -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+</head>
+<body>
+
+  <div id="app"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <script src="js/data/states.js"></script>
+  <script src="js/data/categories.js"></script>
+  <script src="js/data/places-south.js"></script>
+  <script src="js/data/places-north.js"></script>
+  <script src="js/data/places-east.js"></script>
+  <script src="js/data/places-west.js"></script>
+  <script src="js/data/places.js"></script>
+
+  <script src="js/router.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/pages/home.js"></script>
+  <script src="js/pages/explore.js"></script>
+  <script src="js/pages/state.js"></script>
+  <script src="js/pages/place.js"></script>
+  <script src="js/pages/routePlanner.js"></script>
+  <script src="js/pages/categories.js"></script>
+  <script src="js/pages/category.js"></script>
+  <script src="js/pages/search.js"></script>
+  <script src="js/pages/map.js"></script>
+  <script src="js/pages/auth.js"></script>
+  <script src="js/pages/wishlist.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- ✅ Auto lazy-load all SPA-rendered images -->
+  <script>
+    const lazyObserver = new MutationObserver(() => {
+      document.querySelectorAll('img:not([loading])').forEach(img => {
+        img.setAttribute('loading', 'lazy');
+      });
+    });
+    lazyObserver.observe(document.body, { childList: true, subtree: true });
+  </script>
+
+</body>
+</html>
