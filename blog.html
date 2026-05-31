@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Blog — India Travel Guides, Tips & Destination Articles | Yatra</title>
+  <meta name="description" content="Read expert India travel guides, destination tips, best time to visit, itineraries and hidden gems. Yatra's travel blog covers all 36 states of India.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yatra-tourism.vercel.app/blog.html">
+  <meta property="og:title" content="Travel Blog — India Travel Guides | Yatra">
+  <meta property="og:description" content="Expert India travel guides, itineraries, and destination tips covering all 36 states.">
+  <meta property="og:url" content="https://yatra-tourism.vercel.app/blog.html">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+    body { background: #0A0E1A; color: #F9FAFB; }
+    .blog-nav { position: fixed; top: 0; left: 0; right: 0; height: 72px; z-index: 500; display: flex; align-items: center; padding: 0 32px; background: rgba(10,14,26,0.95); border-bottom: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(20px); }
+    .blog-nav-inner { display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: 1280px; margin: 0 auto; }
+    .logo { display: flex; align-items: center; gap: 8px; font-family: 'Outfit',sans-serif; font-size: 1.5rem; font-weight: 800; text-decoration: none; }
+    .logo-text { background: linear-gradient(135deg,#FF6B35,#F7C948); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .nl a { color: #9CA3AF; font-size: 14px; font-weight: 500; text-decoration: none; margin-left: 24px; }
+    .nl a:hover { color: #FF6B35; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    .badge { display: inline-block; background: rgba(255,107,53,0.12); color: #FF6B35; border: 1px solid rgba(255,107,53,0.3); border-radius: 999px; font-size: 12px; font-weight: 600; padding: 4px 12px; margin-bottom: 16px; }
+    .hero { background: linear-gradient(135deg,#0A0E1A,#1A1F35,#0F172A); padding: 120px 0 60px; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .article-card { background: rgba(17,24,39,0.8); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; overflow: hidden; transition: transform 0.3s, border-color 0.3s; text-decoration: none; display: block; }
+    .article-card:hover { transform: translateY(-4px); border-color: rgba(255,107,53,0.3); }
+    .article-card img { width: 100%; height: 200px; object-fit: cover; }
+    .article-card-body { padding: 24px; }
+    .article-tag { display: inline-block; background: rgba(255,107,53,0.1); color: #FF6B35; border-radius: 999px; font-size: 11px; font-weight: 600; padding: 3px 10px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .article-card h2 { font-family: 'Outfit',sans-serif; font-size: 1.1rem; font-weight: 700; color: #F9FAFB; margin-bottom: 10px; line-height: 1.4; }
+    .article-card p { font-size: 13px; color: #9CA3AF; line-height: 1.7; margin-bottom: 16px; }
+    .article-meta { display: flex; align-items: center; gap: 12px; font-size: 12px; color: #6B7280; }
+    .articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; padding: 60px 0 100px; }
+    .newsletter-section { background: linear-gradient(135deg, rgba(255,107,53,0.08), rgba(247,201,72,0.05)); border: 1px solid rgba(255,107,53,0.15); border-radius: 20px; padding: 48px; text-align: center; margin-bottom: 80px; }
+    .newsletter-section h2 { font-family: 'Outfit',sans-serif; font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+    .newsletter-section p { color: #9CA3AF; font-size: 14px; margin-bottom: 24px; }
+    .newsletter-form { display: flex; gap: 12px; max-width: 440px; margin: 0 auto; }
+    .newsletter-form input { flex: 1; padding: 12px 16px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.12); background: rgba(17,24,39,0.8); color: #F9FAFB; font-size: 14px; outline: none; }
+    .newsletter-form input:focus { border-color: #FF6B35; }
+    .newsletter-form button { padding: 12px 24px; border-radius: 10px; border: none; background: linear-gradient(135deg,#FF6B35,#F7C948); color: #0A0E1A; font-weight: 700; font-size: 14px; cursor: pointer; white-space: nowrap; transition: transform 0.2s; }
+    .newsletter-form button:hover { transform: scale(1.03); }
+    footer { background: #0A0E1A; border-top: 1px solid rgba(255,255,255,0.07); padding: 36px 0; text-align: center; }
+    footer p { color: #4B5563; font-size: 13px; }
+    footer a { color: #FF6B35; text-decoration: none; }
+    .social-links { display: flex; justify-content: center; gap: 16px; margin-bottom: 16px; }
+    .social-links a { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 10px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); color: #9CA3AF; text-decoration: none; font-size: 16px; transition: all 0.2s; }
+    .social-links a:hover { background: rgba(255,107,53,0.15); border-color: rgba(255,107,53,0.3); color: #FF6B35; }
+    @media(max-width:600px){ .newsletter-form { flex-direction: column; } .nl { display: none; } }
+  </style>
+</head>
+<body>
+
+<nav class="blog-nav">
+  <div class="blog-nav-inner">
+    <a href="index.html" class="logo"><span>🧭</span><span class="logo-text">Yatra</span></a>
+    <div class="nl">
+      <a href="index.html#/explore">Explore</a>
+      <a href="index.html#/route-planner">Route Planner</a>
+      <a href="blog.html" style="color:#FF6B35;">Blog</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <span class="badge">Travel Blog</span>
+    <h1 style="font-family:'Outfit',sans-serif; font-size:clamp(2rem,5vw,3rem); font-weight:800; margin-bottom:14px;">
+      India Travel <span style="background:linear-gradient(135deg,#FF6B35,#F7C948); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">Guides & Tips</span>
+    </h1>
+    <p style="color:#9CA3AF; font-size:1.05rem; max-width:560px; line-height:1.75;">Expert guides, itineraries, hidden gems and travel tips for every corner of India — from the Himalayas to the backwaters.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="articles-grid">
+
+      <a href="blog/top-10-places-rajasthan.html" class="article-card">
+        <img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?w=600&fit=crop&q=80" alt="Rajasthan Travel Guide" loading="lazy">
+        <div class="article-card-body">
+          <span class="article-tag">Rajasthan</span>
+          <h2>Top 10 Places to Visit in Rajasthan — The Royal Desert State</h2>
+          <p>From the pink streets of Jaipur to the golden dunes of Jaisalmer, discover Rajasthan's most magnificent destinations.</p>
+          <div class="article-meta"><span>📅 June 2025</span><span>⏱ 8 min read</span></div>
+        </div>
+      </a>
+
+      <a href="blog/kerala-travel-guide.html" class="article-card">
+        <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&fit=crop&q=80" alt="Kerala Travel Guide" loading="lazy">
+        <div class="article-card-body">
+          <span class="article-tag">Kerala</span>
+          <h2>The Complete Kerala Travel Guide — God's Own Country</h2>
+          <p>Backwaters, tea gardens, elephant sanctuaries and Ayurveda — everything you need to plan the perfect Kerala trip.</p>
+          <div class="article-meta"><span>📅 June 2025</span><span>⏱ 10 min read</span></div>
+        </div>
+      </a>
+
+      <a href="blog/ladakh-travel-guide.html" class="article-card">
+        <img src="https://images.unsplash.com/photo-1617158047500-78a253d18bf3?w=600&fit=crop&q=80" alt="Ladakh Travel Guide" loading="lazy">
+        <div class="article-card-body">
+          <span class="article-tag">Ladakh</span>
+          <h2>Ladakh Travel Guide — Everything You Need to Know</h2>
+          <p>Pangong Tso, Nubra Valley, ancient monasteries and the world's highest passes — the ultimate Ladakh adventure guide.</p>
+          <div class="article-meta"><span>📅 June 2025</span><span>⏱ 12 min read</span></div>
+        </div>
+      </a>
+
+      <a href="blog/best-time-to-visit-india.html" class="article-card">
+        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&fit=crop&q=80" alt="Best Time to Visit India" loading="lazy">
+        <div class="article-card-body">
+          <span class="article-tag">Travel Tips</span>
+          <h2>Best Time to Visit India — Month by Month Guide</h2>
+          <p>India's diverse climate means different regions shine in different seasons. Here's exactly when to visit every part of India.</p>
+          <div class="article-meta"><span>📅 June 2025</span><span>⏱ 9 min read</span></div>
+        </div>
+      </a>
+
+      <a href="blog/northeast-india-hidden-gems.html" class="article-card">
+        <img src="https://images.unsplash.com/photo-1600101169110-ff35e3e4bdf5?w=600&fit=crop&q=80" alt="Northeast India" loading="lazy">
+        <div class="article-card-body">
+          <span class="article-tag">Northeast India</span>
+          <h2>Northeast India's Hidden Gems — The Unexplored Paradise</h2>
+          <p>Living root bridges, floating lakes, hornbill festivals and misty mountains — Northeast India is the country's best kept secret.</p>
+          <div class="article-meta"><span>📅 June 2025</span><span>⏱ 11 min read</span></div>
+        </div>
+      </a>
+
+      <a href="blog/india-road-trip-guide.html" class="article-card">
+        <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=600&fit=crop&q=80" alt="India Road Trip" loading="lazy">
+        <div class="article-card-body">
+          <span class="article-tag">Road Trips</span>
+          <h2>5 Epic India Road Trips You Must Do in Your Lifetime</h2>
+          <p>From the Leh-Manali highway to the Coastal Karnataka drive — India's most breathtaking road trips mapped out for you.</p>
+          <div class="article-meta"><span>📅 June 2025</span><span>⏱ 10 min read</span></div>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Newsletter Signup -->
+    <div class="newsletter-section">
+      <h2>🗺️ Get Travel Tips in Your Inbox</h2>
+      <p>Subscribe to get the latest travel guides, hidden gem discoveries, and trip planning tips delivered weekly.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); this.innerHTML='<p style=\'color:#FF6B35; font-weight:600; padding:12px;\'>✅ Thanks for subscribing! You\'ll hear from us soon.</p>';">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="social-links">
+    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">🐦</a>
+    <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">▶️</a>
+  </div>
+  <p>&copy; <script>document.write(new Date().getFullYear())</script> Yatra — Discover India &nbsp;|&nbsp; <a href="privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms.html">Terms</a> &nbsp;|&nbsp; <a href="about.html">About</a></p>
+</footer>
+
+</body>
+</html>

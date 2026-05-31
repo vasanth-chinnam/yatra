@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — Yatra</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0A0E1A; color: #F9FAFB; font-family: 'Inter', sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
+    .nav-404 { height: 72px; display: flex; align-items: center; padding: 0 32px; background: rgba(10,14,26,0.95); border-bottom: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(20px); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: 1280px; margin: 0 auto; }
+    .logo { display: flex; align-items: center; gap: 8px; font-family: 'Outfit',sans-serif; font-size: 1.5rem; font-weight: 800; text-decoration: none; }
+    .logo-text { background: linear-gradient(135deg,#FF6B35,#F7C948); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .container { flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; padding: 40px 24px; }
+    .error-code { font-family: 'Outfit', sans-serif; font-size: clamp(6rem, 15vw, 12rem); font-weight: 800; background: linear-gradient(135deg, #FF6B35 0%, #F7C948 50%, #FF6B35 100%); background-size: 200% 200%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: shimmer 3s ease-in-out infinite; line-height: 1; margin-bottom: 16px; }
+    @keyframes shimmer { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+    .error-icon { font-size: 4rem; margin-bottom: 20px; animation: float 3s ease-in-out infinite; }
+    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+    h1 { font-family: 'Outfit', sans-serif; font-size: 1.5rem; font-weight: 700; margin-bottom: 12px; }
+    .desc { color: #9CA3AF; font-size: 1rem; max-width: 420px; margin: 0 auto 32px; line-height: 1.7; }
+    .btn-group { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 12px; background: linear-gradient(135deg,#FF6B35,#F7C948); color: #0A0E1A; font-weight: 700; font-size: 14px; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(255,107,53,0.3); }
+    .btn-secondary { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 12px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); color: #F9FAFB; font-weight: 600; font-size: 14px; text-decoration: none; transition: all 0.2s; }
+    .btn-secondary:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,107,53,0.3); }
+    .suggestions { margin-top: 48px; padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.07); }
+    .suggestions h3 { font-family: 'Outfit', sans-serif; font-size: 1rem; font-weight: 600; color: #9CA3AF; margin-bottom: 16px; }
+    .suggestion-links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .suggestion-links a { padding: 8px 16px; border-radius: 8px; background: rgba(255,107,53,0.08); border: 1px solid rgba(255,107,53,0.15); color: #FF6B35; font-size: 13px; font-weight: 500; text-decoration: none; transition: all 0.2s; }
+    .suggestion-links a:hover { background: rgba(255,107,53,0.15); border-color: rgba(255,107,53,0.3); }
+    footer { border-top: 1px solid rgba(255,255,255,0.07); padding: 24px 0; text-align: center; }
+    footer p { color: #4B5563; font-size: 13px; }
+    footer a { color: #FF6B35; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav class="nav-404">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span>🧭</span><span class="logo-text">Yatra</span></a>
+  </div>
+</nav>
+
+<div class="container">
+  <div>
+    <div class="error-icon">🏔️</div>
+    <div class="error-code">404</div>
+    <h1>Lost in the mountains!</h1>
+    <p class="desc">The page you're looking for seems to have wandered off the trail. Don't worry — India has 700+ amazing destinations waiting for you.</p>
+    <div class="btn-group">
+      <a href="index.html" class="btn-primary">🏠 Back to Home</a>
+      <a href="index.html#/explore" class="btn-secondary">🗺️ Explore Destinations</a>
+    </div>
+    <div class="suggestions">
+      <h3>Popular destinations to explore</h3>
+      <div class="suggestion-links">
+        <a href="index.html#/state/rajasthan">Rajasthan</a>
+        <a href="index.html#/state/kerala">Kerala</a>
+        <a href="index.html#/state/goa">Goa</a>
+        <a href="index.html#/state/himachal-pradesh">Himachal Pradesh</a>
+        <a href="blog.html">Travel Blog</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; <script>document.write(new Date().getFullYear())</script> Yatra — Discover India &nbsp;|&nbsp; <a href="index.html">Home</a></p>
+</footer>
+
+</body>
+</html>

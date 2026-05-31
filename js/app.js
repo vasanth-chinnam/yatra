@@ -54,6 +54,10 @@ function renderNavbar() {
           <i data-lucide="map" style="width: 16px; height: 16px;"></i>
           <span>Route Planner</span>
         </a>
+        <a href="blog.html" class="nav-link">
+          <i data-lucide="book-open" style="width: 16px; height: 16px;"></i>
+          <span>Blog</span>
+        </a>
         <a href="#/search" class="nav-link">
           <i data-lucide="search" style="width: 16px; height: 16px;"></i>
           <span>Search</span>
@@ -73,6 +77,7 @@ function renderNavbar() {
       <a href="#/explore" class="nav-link mobile-nav-link">Explore States</a>
       <a href="#/categories" class="nav-link mobile-nav-link">Categories</a>
       <a href="#/route-planner" class="nav-link mobile-nav-link">Route Planner</a>
+      <a href="blog.html" class="nav-link mobile-nav-link">Blog</a>
       <a href="#/search" class="nav-link mobile-nav-link">Search</a>
     </div>
   `;
@@ -172,7 +177,9 @@ function renderFooter() {
       <div class="footer-bottom" style="display:flex; flex-direction:column; align-items:center; gap:10px; margin-top:20px; border-top:1px solid rgba(255,255,255,0.05); padding-top:20px;">
         <div style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center;">
           <a href="about.html" style="color:#9CA3AF; font-size:13px; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#FF6B35'" onmouseout="this.style.color='#9CA3AF'">About Yatra</a>
+          <a href="blog.html" style="color:#9CA3AF; font-size:13px; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#FF6B35'" onmouseout="this.style.color='#9CA3AF'">Travel Blog</a>
           <a href="privacy-policy.html" style="color:#9CA3AF; font-size:13px; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#FF6B35'" onmouseout="this.style.color='#9CA3AF'">Privacy Policy</a>
+          <a href="terms.html" style="color:#9CA3AF; font-size:13px; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#FF6B35'" onmouseout="this.style.color='#9CA3AF'">Terms & Conditions</a>
           <a href="about.html#contact" style="color:#9CA3AF; font-size:13px; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#FF6B35'" onmouseout="this.style.color='#9CA3AF'">Contact Us</a>
         </div>
         <p>&copy; ${new Date().getFullYear()} Yatra — Discover India. Crafted with ❤️ for travelers.</p>
