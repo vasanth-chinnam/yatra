@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yatra.in/sitemap.xml
+Sitemap: https://yatra-tourism.vercel.app/sitemap.xml
